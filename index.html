@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>swipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="sw_homepage.css">
+    <link rel="stylesheet" href="second_page.css">
+    <link rel="stylesheet" href="clock_app.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="smart_watch_device">
+            <img src="img/smart_watch.png" alt="smart_watch">
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="smart_watch_container">
+                        <div class="main_smart_watch">
+                            <div class="date_day_container">
+                                <span id="date">
+                                    **-**
+                                </span>
+                                <span id="day">
+                                    ***
+                                </span>
+                            </div>
+                            <div id="time_container">
+                                <span id="time">00:00:00 am</span id="time">
+                            </div>
+                            <div class="smart_watch">
+                                
+                                    <div style="--i:1" class="icon">
+                                        <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:2" class="icon">
+                                        <a href="https://twitter.com/?lang=en" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:3" class="icon">
+                                        <a href="https://web.whatsapp.com/" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:4" class="icon">
+                                        
+                                        <a href="https://www.messenger.com/" target="_blank"><ion-icon name="chatbubbles"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:5" class="icon">
+                                        <a href="https://www.google.com/" target="_blank"><ion-icon name="logo-google"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:6" class="icon">
+                                        <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:7" class="icon">
+                                        <a href="https://vcite.net/" target="_blank"><ion-icon name="logo-vimeo"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:8" class="icon">
+                                        <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                                    </div>
+                                    <div style="--i:9" class="icon home">
+                                        <a href="#"><ion-icon name="home" style="font-size: 50px;"></ion-icon></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="swiper-slide">
+                        
+                        <div class="second_page_container">
+                            <div class="date_day_container">
+                                <span id="date2">
+                                    **-**
+                                </span>
+                                <span id="day2">
+                                    ***
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="cube_icon">
+                            <div class="top_icon"></div>
+                            <div class="icon_container">
+                                <div class="icon_icon">
+                                    <img src="icons/clock.png" id="google_map_link" alt="clock" width="100%" height="100%" onclick="open_clock_app()">
+                                </div>
+                                <div class="icon_sides clock_icon_sides" style="--j:0"></div>
+                                <div class="icon_sides clock_icon_sides" style="--j:1"></div>
+                                <div class="icon_sides clock_icon_sides" style="--j:2"></div>
+                                <div class="icon_sides clock_icon_sides" style="--j:3"></div>
+                            </div>
+                            <div class="bottom_icon"></div>
+                            <div class="bottom_shadow"></div>
+                        </div>
+                        <div class="cube_base_container">
+                            <div class="top"></div>
+                            <div class="sides_container">
+                                <h1>CLOCK</h1>
+                                <span class="sides" style="--i:0"></span>
+                                <span class="sides" style="--i:1"></span>
+                                <span class="sides" style="--i:2"></span>
+                                <span class="sides" style="--i:3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="second_page_container">
+                            <div class="date_day_container">
+                                <span id="date3">
+                                    **-**
+                                </span>
+                                <span id="day3">
+                                    ***
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cube_icon">
+                            <div class="top_icon"></div>
+                            <div class="icon_container">
+                                <div class="icon_icon">
+                                    <a href="https://www.google.com/"><img src="icons/calendar.png" id="google_map_link" alt="clock" width="100%" height="100%"></a>
+                                </div>
+                                <div class="icon_sides" style="--j:0"></div>
+                                <div class="icon_sides" style="--j:1"></div>
+                                <div class="icon_sides" style="--j:2"></div>
+                                <div class="icon_sides" style="--j:3"></div>
+                            </div>
+                            <div class="bottom_icon"></div>
+                            <div class="bottom_shadow"></div>
+                        </div>
+                        <div class="cube_base_container">
+                            <div class="top"></div>
+                            <div class="sides_container">
+                                <h1>CALENDAR</h1>
+                                <span class="sides" style="--i:0"></span>
+                                <span class="sides" style="--i:1"></span>
+                                <span class="sides" style="--i:2"></span>
+                                <span class="sides" style="--i:3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="second_page_container">
+                            <div class="date_day_container">
+                                <span id="date4">
+                                    **-**
+                                </span>
+                                <span id="day4">
+                                    ***
+                                </span>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/">
+                            <div class="cube_icon">
+                                <div class="top_icon"></div>
+                                <div class="icon_container">
+                                    <div class="icon_icon"><img src="icons/google_map.png" alt="clock" width="100%" height="100%"></div>
+                                    <div class="icon_sides" style="--j:0"></div>
+                                    <div class="icon_sides" style="--j:1"></div>
+                                    <div class="icon_sides" style="--j:2"></div>
+                                    <div class="icon_sides" style="--j:3"></div>
+                                </div>
+                                <div class="bottom_icon"></div>
+                                <div class="bottom_shadow"></div>
+                            </div>
+                        </a>
+                        <div class="cube_base_container">
+                            <div class="top"></div>
+                            <div class="sides_container">
+                                <h1>GOOGLE MAP</h1>
+                                <span class="sides" style="--i:0"></span>
+                                <span class="sides" style="--i:1"></span>
+                                <span class="sides" style="--i:2"></span>
+                                <span class="sides" style="--i:3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="second_page_container">
+                            <div class="date_day_container">
+                                <span id="date5">
+                                    **-**
+                                </span>
+                                <span id="day5">
+                                    ***
+                                </span>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/">
+                            <div class="cube_icon">
+                                <div class="top_icon"></div>
+                                <div class="icon_container">
+                                    <div class="icon_icon"><img src="icons/camera.png" alt="clock" width="100%" height="100%"></div>
+                                    <div class="icon_sides" style="--j:0"></div>
+                                    <div class="icon_sides" style="--j:1"></div>
+                                    <div class="icon_sides" style="--j:2"></div>
+                                    <div class="icon_sides" style="--j:3"></div>
+                                </div>
+                                <div class="bottom_icon"></div>
+                                <div class="bottom_shadow"></div>
+                            </div>
+                        </a>
+                        <div class="cube_base_container">
+                            <div class="top"></div>
+                            <div class="sides_container">
+                                <h1>CAMERA</h1>
+                                <span class="sides" style="--i:0"></span>
+                                <span class="sides" style="--i:1"></span>
+                                <span class="sides" style="--i:2"></span>
+                                <span class="sides" style="--i:3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="second_page_container">
+                            <div class="date_day_container">
+                                <span id="date6">
+                                    **-**
+                                </span>
+                                <span id="day6">
+                                    ***
+                                </span>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="cube_icon">
+                                <div class="top_icon"></div>
+                                <div class="icon_container">
+                                    <div class="icon_icon"><img src="icons/settings.png" alt="clock" width="100%" height="100%"></div>
+                                    <div class="icon_sides" style="--j:0"></div>
+                                    <div class="icon_sides" style="--j:1"></div>
+                                    <div class="icon_sides" style="--j:2"></div>
+                                    <div class="icon_sides" style="--j:3"></div>
+                                </div>
+                                <div class="bottom_icon"></div>
+                                <div class="bottom_shadow"></div>
+                            </div>
+                        </a>
+                        <div class="cube_base_container">
+                            <div class="top"></div>
+                            <div class="sides_container">
+                                <h1>SETTINGS</h1>
+                                <span class="sides" style="--i:0"></span>
+                                <span class="sides" style="--i:1"></span>
+                                <span class="sides" style="--i:2"></span>
+                                <span class="sides" style="--i:3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="clock_app_container">
+                    <div class="clock_app">
+                        <div class="clock_menu">
+                            <div class="back_button">◄</div>
+                            <ul>
+                                <li class="menu active" onclick="slide('alarm_click')">Alarm</li>
+                                <li class="menu" onclick="slide('clock_click')">Clock</li>
+                                <li class="menu" onclick="slide('stopwatch_click')">Stopwatch</li>
+                                <li class="menu" onclick="slide('timer_click')">Timer</li>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </ul>
+                        </div>
+                        <div class="clock_main_container">
+                            <div class="clock_pages">
+                                <div class="clock_page one">
+                                    <div class="clock_content">
+                                        <div class="set_alarm">
+                                            <span class="set_time">5:00</span>
+                                            <span class="set_time_indicator">AM</span>
+                                            <span class="set_label">Data Analysis Class</span>
+                                            <div class="set_checkbox_container">
+                                                <ul class="set_checkbox">
+                                                    <li class="list"></li>
+                                                </ul>
+                                            </div>
+                                            <span class="set_time_left">Time left: <span>01:18:28</span></span>
+                                            <span class="alarm_clock_days">
+                                                <ul>
+                                                    <li class="alarm_clock_day">M</li>
+                                                    <li class="alarm_clock_day">T</li>
+                                                    <li class="alarm_clock_day">W</li>
+                                                    <li class="alarm_clock_day">T</li>
+                                                    <li class="alarm_clock_day">F</li>
+                                                    <li class="alarm_clock_day">S</li>
+                                                    <li class="alarm_clock_day">S</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                        <div class="set_alarm2">
+                                            <span class="set_time2">10:00</span>
+                                            <span class="set_time_indicator2">AM</span>
+                                            <span class="set_label2">Data Analysis Class</span>
+                                            <div class="set_checkbox_container2">
+                                                <ul class="set_checkbox2">
+                                                    <li class="list2"></li>
+                                                </ul>
+                                            </div>
+                                            <span class="set_time_left2">Time left: <span>01:18:28</span></span>
+                                            <span class="alarm_clock_days2">
+                                                <ul>
+                                                    <li class="alarm_clock_day2">M</li>
+                                                    <li class="alarm_clock_day2">T</li>
+                                                    <li class="alarm_clock_day2">W</li>
+                                                    <li class="alarm_clock_day2">T</li>
+                                                    <li class="alarm_clock_day2">F</li>
+                                                    <li class="alarm_clock_day2">S</li>
+                                                    <li class="alarm_clock_day2">S</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                        <div class="set_alarm3">
+                                            <span class="set_time3">11:00</span>
+                                            <span class="set_time_indicator3">AM</span>
+                                            <span class="set_label3">Data Analysis Class</span>
+                                            <div class="set_checkbox_container3">
+                                                <ul class="set_checkbox3">
+                                                    <li class="list3"></li>
+                                                </ul>
+                                            </div>
+                                            <span class="set_time_left3">Time left: <span>01:18:28</span></span>
+                                            <span class="alarm_clock_days3">
+                                                <ul>
+                                                    <li class="alarm_clock_day3">M</li>
+                                                    <li class="alarm_clock_day3">T</li>
+                                                    <li class="alarm_clock_day3">W</li>
+                                                    <li class="alarm_clock_day3">T</li>
+                                                    <li class="alarm_clock_day3">F</li>
+                                                    <li class="alarm_clock_day3">S</li>
+                                                    <li class="alarm_clock_day3">S</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                        <div class="set_alarm4">
+                                            <span class="set_time4">12:00</span>
+                                            <span class="set_time_indicator4">AM</span>
+                                            <span class="set_label4">Data Analysis Class</span>
+                                            <div class="set_checkbox_container4">
+                                                <ul class="set_checkbox4">
+                                                    <li class="list4"></li>
+                                                </ul>
+                                            </div>
+                                            <span class="set_time_left4">Time left: <span>01:18:28</span></span>
+                                            <span class="alarm_clock_days4">
+                                                <ul>
+                                                    <li class="alarm_clock_day4">M</li>
+                                                    <li class="alarm_clock_day4">T</li>
+                                                    <li class="alarm_clock_day4">W</li>
+                                                    <li class="alarm_clock_day4">T</li>
+                                                    <li class="alarm_clock_day4">F</li>
+                                                    <li class="alarm_clock_day4">S</li>
+                                                    <li class="alarm_clock_day4">S</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                        <div class="create_alarm_container">
+                                            <div class="create_alarm">
+                                                <div class="create_alarm_check">✓</div>
+                                                <span class="create_alarm_message">Alarm will ring in 10h:28m</span>
+                                                <form class="set_alarm_form">
+                                                    <input type="text" name="set_alarm_hour" placeholder="hh"><span class="semi_colon">:</span>
+                                                    <input type="text" name="set_alarm_minute" placeholder="mm"><span class="semi_colon">:</span>
+                                                    <input type="text" name="set_alarm_indicator" placeholder="am">
+                                                </form>
+                                                <span class="create_alarm_title">Alarm name <input type="text" name="alarm_title" placeholder="Alarm"></span>
+                                                <span class="create_alarm_repeat">
+                                                        <div class="create_days_repeat">
+                                                            <span class="create_alarm_days" style="color: white">MON</span>
+                                                <span class="create_alarm_days" style="color: white">TUE</span>
+                                                <span class="create_alarm_days" style="color: white">WED</span>
+                                                <span class="create_alarm_days" style="color: white">THU</span>
+                                                <span class="create_alarm_days" style="color: white">FRI</span>
+                                                <span class="create_alarm_days" style="color: white">SAT</span>
+                                                <span class="create_alarm_days" style="color: white">SUN</span>
+                                            </div>
+                                            <div class="alarm_repeat">
+                                                <div class="repeat_alarm">
+                                                    <div class="repeat_label">Repeat Alarm</div>
+                                                    <div class="repeat_alarm_lists">
+                                                        <ul class="repeat_alarm_ul">
+                                                            <li class="repeat_alarm_li"></li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add_alarm_base"></div>
+                                    <div class="add_alarm">
+                                        <div class="add_alarm_shadow"></div><span>+</span></div>
+                                    <!--
+                                            <div class="set_alarm3">
+                                            <span class="set_time3">11:00</span>
+                                            <span class="set_time_indicator3">AM</span>
+                                            <span class="set_label3">Data Analysis Class</span>
+                                            <div class="set_checkbox_container3">
+                                                <ul class="set_checkbox3">
+                                                    <li class="list3"></li>
+                                                </ul>
+                                            </div>
+                                            <span class="set_time_left3">Time left: <span>01:18:28</span></span>
+                                        </div>
+                                        <div class="set_alarm4">
+                                            <span class="set_time4">12:00</span>
+                                            <span class="set_time_indicator4">AM</span>
+                                            <span class="set_label4">Data Analysis Class</span>
+                                            <div class="set_checkbox_container4">
+                                                <ul class="set_checkbox4">
+                                                    <li class="list4"></li>
+                                                </ul>
+                                            </div>
+                                            <span class="set_time_left4">Time left: <span>01:18:28</span></span>
+                                        </div>
+                                        -->
+                                </div>
+                            </div>
+                            <div class="clock_page two">
+                                <div class="clock_content">
+                                    <h1>Page 2</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, id nemo soluta illum tenetur labore hic. Totam eos ab repellendus alias dolorem, sed sit expedita labore exercitationem, quaerat tenetur nesciunt?</p>
+                                </div>
+                            </div>
+                            <div class="clock_page three">
+                                <div class="clock_content">
+                                    <h1>Page 3</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, id nemo soluta illum tenetur labore hic. Totam eos ab repellendus alias dolorem, sed sit expedita labore exercitationem, quaerat tenetur nesciunt?</p>
+                                </div>
+                            </div>
+                            <div class="clock_page four">
+                                <div class="clock_content">
+                                    <h1>Page 4</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, id nemo soluta illum tenetur labore hic. Totam eos ab repellendus alias dolorem, sed sit expedita labore exercitationem, quaerat tenetur nesciunt?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <script>
+        //Drawer Opening and Closing
+        const drawer_to_open_close = document.querySelector('.smart_watch');
+        const drawer_clicker = document.querySelector('.home');
+        drawer_clicker.addEventListener("click", close_drawer);
+
+        function close_drawer() {
+            (drawer_to_open_close.classList.contains('active')) ? drawer_to_open_close.classList.remove('active'): drawer_to_open_close.classList.add('active');
+        }
+    </script>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/time_second.js"></script>
+    <script src="js/clock_app_script.js"></script>
+
+    <script>
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

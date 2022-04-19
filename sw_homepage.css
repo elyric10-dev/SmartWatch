@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@1,700&family=Poppins:ital,wght@0,100;1,600&display=swap');
+:root {
+    --icon_color: #00B2FF;
+    --icon_shadow_color: #00B2FF;
+    --icon_container_size: 70px;
+    --icon_size: 40px;
+    --icon_hover_size_calc: calc(var(--icon_size) * 0.4);
+    --icon_hover_size: calc(var(--icon_size) + var(--icon_hover_size_calc));
+    --device_width_height: 320px;
+    --smart_watch_width_height: 280px;
+    --smart_watch_drawer_width_height: 90px;
+    --smart_watch_drawer_color: rgba(247, 240, 245, 0.01);
+    --time_font_size: 80px;
+    --time_font_line_height: 50px;
+    --time_width: 270px;
+    --time_height: 150px;
+    --date_day_size: 30px;
+    --bg_color: #252525;
+    --icon_container_color: #252525;
+    --time_bg: rgba(0, 178, 255, 0.1);
+}
+
+.main_smart_watch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--device_width_height);
+    height: var(--device_width_height);
+}
+
+.main_smart_watch .date_day_container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: var(--date_day_size);
+    background-color: var(--time_bg);
+    text-shadow: 10px 10px 5px #252525;
+}
+
+.main_smart_watch .date_day_container #date {
+    position: absolute;
+    left: 30px;
+    color: white;
+    font-size: var(--date_day_size);
+    font-family: 'Marvel', sans-serif;
+    -webkit-text-stroke-width: .1px;
+    filter: drop-shadow(0px 0px 15px black);
+}
+
+.main_smart_watch .date_day_container #day {
+    position: absolute;
+    right: 30px;
+    color: white;
+    font-size: var(--date_day_size);
+    font-family: 'Marvel', sans-serif;
+    -webkit-text-stroke-width: .1px;
+    filter: drop-shadow(0px 0px 15px black);
+}
+
+.main_smart_watch #time_container {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: var(--time_width);
+    height: var(--time_height);
+    background-color: var(--time_bg);
+    backdrop-filter: blur(2px);
+    line-height: var(--time_font_line_height);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.main_smart_watch #time_container #time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Marvel', sans-serif;
+    font-size: var(--time_font_size);
+    font-weight: 1000;
+    color: white;
+    filter: drop-shadow(10px 10px 5px black);
+}
+
+.smart_watch {
+    position: absolute;
+    bottom: 0px;
+    width: var(--smart_watch_drawer_width_height);
+    height: var(--smart_watch_drawer_width_height);
+    background-color: var(--smart_watch_drawer_color);
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.smart_watch.active {
+    width: var(--smart_watch_width_height);
+    height: var(--smart_watch_width_height);
+    border-radius: 45px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.3);
+    bottom: 10px;
+    transition: 0.3s;
+}
+
+.smart_watch_container .smart_watch .icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--icon_container_color);
+    border-radius: 50%;
+    transition: 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(1) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.25s;
+    transform: translateX(-120px) translateY(-120px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(2) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.30s;
+    transform: translateX(-35px) translateY(-120px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(3) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.35s;
+    transform: translateX(50px) translateY(-120px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(4) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.60s;
+    transform: translateX(-120px) translateY(-35px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(5) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.50s;
+    transform: translateX(50px) translateY(50px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(6) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.40s;
+    transform: translateX(50px) translateY(-35px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch .icon:nth-child(7) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(7) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.55s;
+    transform: translateX(-120px) translateY(50px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(8) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.50s;
+    transform: translateX(-35px) translateY(50px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch.active .icon:nth-child(9) {
+    width: var(--icon_container_size);
+    height: var(--icon_container_size);
+    transition-delay: 0.45s;
+    transform: translateX(-35px) translateY(-35px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.smart_watch_container .smart_watch .icon ion-icon {
+    color: var(--icon_color);
+    font-size: calc(var(--icon_size) + var(--icon_hover_size) / 16);
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.smart_watch:hover .icon ion-icon {
+    color: var(--icon_color);
+}
+
+.icon ion-icon:hover {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.smart_watch_container .smart_watch .icon:hover ion-icon {
+    color: var(--icon_color);
+    font-size: var(--icon_hover_size);
+    filter: drop-shadow(-0px -0px 25px var(--icon_shadow_color)) drop-shadow(0px -0px 30px var(--icon_shadow_color));
+}
